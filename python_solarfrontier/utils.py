@@ -1,4 +1,5 @@
 """Utility classes to work with device data."""
+from typing import Tuple
 import re
 
 
@@ -68,7 +69,7 @@ class SolarFrontierWebInfoParser:
 class UnitConverter:
     """Convert measurement units like kW, MWh to base units."""
 
-    def parse_measurement(self, measurement) -> tuple[int, str]:
+    def parse_measurement(self, measurement) -> Tuple[int, str]:
         """Parse the measurement into value and unit."""
         # value is number or float, rest is unbit
         value_match = re.search(r"^(\d+(\.\d+)?)\s*([a-zA-Z]+)$", measurement.strip())
