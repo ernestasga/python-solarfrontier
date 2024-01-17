@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="python-solarfrontier",
-    version="0.1.0",
+    version="0.1.1",
     author="ernestasga",
     description="Library to communicate with Solar Frotier inverters",
     long_description=long_description,
