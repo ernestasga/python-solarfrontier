@@ -2,24 +2,34 @@
 
 <div align="center">
 
-[![Tests](https://github.com/ernestasga/python-solarfrontier/actions/workflows/test.yml/badge.svg)](https://github.com/ernestasga/python-solarfrontier/actions/workflows/test.yml)   
+  <img src="https://github.com/ernestasga/python-solarfrontier/tree/main/image/solar-frontier-logo.png" alt="solar-frontier-logo" >
 
-![Python Version](https://img.shields.io/badge/python-3.8=<-blue.svg)
+  <a href="https://github.com/ernestasga/python-solarfrontier/actions/workflows/test.yml">
+    <img src="https://github.com/ernestasga/python-solarfrontier/actions/workflows/test.yml/badge.svg" alt="Tests">
+  </a>
+  <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python Version">
+  <a href="https://pypi.org/project/python-solarfrontier/">
+    <img src="https://img.shields.io/pypi/v/python-solarfrontier.svg" alt="PyPI Version">
+  </a>
+
 </div>
-<p>
-Python Library to retrieve data from "Solar Frontier" inverters on LAN. Able to get measurements, yield data, system info. 
+<p align="center">
+  Python Library to retrieve data from "Solar Frontier" inverters on LAN. Able to get measurements, yield data, system info.
 </p>
 
-</div>
 
-
+# Installation
+Available on PyPi
+```bash
+pip install python-solarfrontier
+```
 
 # Compatibility
 **Confirmed to work with:**
 
 * SF-WR-5503x
 
-## Example
+# Example
 Initiate the API instance with host. Authentication not supported.
 
 ```
