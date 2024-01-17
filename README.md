@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="https://github.com/ernestasga/python-solarfrontier/tree/main/image/solar-frontier-logo.png" alt="solar-frontier-logo" >
+  <img src="https://github.com/ernestasga/python-solarfrontier/tree/main/images/solar-frontier-logo.png" alt="solar-frontier-logo" >
 
   <a href="https://github.com/ernestasga/python-solarfrontier/actions/workflows/test.yml">
     <img src="https://github.com/ernestasga/python-solarfrontier/actions/workflows/test.yml/badge.svg" alt="Tests">
