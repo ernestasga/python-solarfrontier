@@ -1,14 +1,18 @@
 # Solar Frontier Inverter API
 
-<p align="center">
-  <a href="https://www.python.org/downloads/">
-    <img src="https://img.shields.io/badge/Python-3.8+-blue.svg"
-         alt="Python 3">
-  </a>
+<div align="center">
+
+[![Tests](https://github.com/ernestasga/python-solarfrontier/actions/workflows/test.yml/badge.svg)](https://github.com/ernestasga/python-solarfrontier/actions/workflows/test.yml)   
+
+![Python Version](https://img.shields.io/badge/python-3.8=<-blue.svg)
+</div>
+<p>
+Python Library to retrieve data from "Solar Frontier" inverters on LAN. Able to get measurements, yield data, system info. 
 </p>
 
+</div>
 
-Python Library to retrieve data from "Solar Frontier" inverters on LAN. Able to get measurements, yield data, system info. 
+
 
 # Compatibility
 **Confirmed to work with:**
