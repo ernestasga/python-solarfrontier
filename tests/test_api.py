@@ -1,6 +1,6 @@
 from python_solarfrontier.api import SolarFrontierAPI
 import unittest
-from unittest.mock import patch, AsyncMock, MagicMock
+from unittest.mock import patch, AsyncMock
 import asyncio
 import aiohttp
 
@@ -131,7 +131,7 @@ class TestSolarFrontierAPI(unittest.TestCase):
     @patch('aiohttp.ClientSession.get')
     def test_get_yield_day_success(self, mock_get):
         # Mock a successful response
-        mock_response_text = 'document.getElementById("labelValueId").innerHTML = "5.0Wh"'  # Example format
+        mock_response_text = 'document.getElementById("labelValueId").innerHTML = "5.0Wh"'
         mock_get.return_value.__aenter__.return_value.status = 200
         mock_get.return_value.__aenter__.return_value.text = AsyncMock(return_value=mock_response_text)
 
@@ -161,7 +161,7 @@ class TestSolarFrontierAPI(unittest.TestCase):
     @patch('aiohttp.ClientSession.get')
     def test_get_yield_month_success(self, mock_get):
         # Mock a successful response
-        mock_response_text = 'document.getElementById("labelValueId").innerHTML = "100.0Wh"'  # Example format
+        mock_response_text = 'document.getElementById("labelValueId").innerHTML = "100.0Wh"'
         mock_get.return_value.__aenter__.return_value.status = 200
         mock_get.return_value.__aenter__.return_value.text = AsyncMock(return_value=mock_response_text)
 
@@ -191,7 +191,7 @@ class TestSolarFrontierAPI(unittest.TestCase):
     @patch('aiohttp.ClientSession.get')
     def test_get_yield_year_success(self, mock_get):
         # Mock a successful response
-        mock_response_text = 'document.getElementById("labelValueId").innerHTML = "500.0Wh"'  # Example format
+        mock_response_text = 'document.getElementById("labelValueId").innerHTML = "500.0Wh"'
         mock_get.return_value.__aenter__.return_value.status = 200
         mock_get.return_value.__aenter__.return_value.text = AsyncMock(return_value=mock_response_text)
 
@@ -221,7 +221,7 @@ class TestSolarFrontierAPI(unittest.TestCase):
     @patch('aiohttp.ClientSession.get')
     def test_get_yield_total_success(self, mock_get):
         # Mock a successful response
-        mock_response_text = 'document.getElementById("labelValueId").innerHTML = "1000.0Wh"'  # Example format
+        mock_response_text = 'document.getElementById("labelValueId").innerHTML = "1000.0Wh"' 
         mock_get.return_value.__aenter__.return_value.status = 200
         mock_get.return_value.__aenter__.return_value.text = AsyncMock(return_value=mock_response_text)
 
@@ -250,12 +250,8 @@ class TestSolarFrontierAPI(unittest.TestCase):
 
     @patch('aiohttp.ClientSession.close', new_callable=AsyncMock)
     def test_close(self, mock_close):
-        session = self.api.session
-
-        # Close the API session
+        self.api.session
         asyncio.run(self.api.close())
-
-        # Check if the close method of the session was called
         mock_close.assert_called()
 
 
